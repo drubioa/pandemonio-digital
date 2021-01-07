@@ -26,10 +26,16 @@ baseurl: "/pandemonio-digital" # the subpath of your site, e.g. /blog
 url: "https://drubioa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: diegorubioa
 github_username:  drubioa
+lang: es-ES
+favicon: assets/images/favicon.ico
 
 # Build settings
 remote_theme: "mmistakes/jekyll-theme-basically-basic"
 show_downloads: false
+
+# Disqus
+disqus:
+  shortname: https-drubioa-github-io-pandemonio-digital
 
 plugins:
   - jekyll-feed

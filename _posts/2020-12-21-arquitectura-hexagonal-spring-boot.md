@@ -3,6 +3,7 @@ layout: post
 title:  "Arquitectura hexagonal en proyectos con Spring Boot"
 date:   2020-12-21 22:00:00 +0100
 categories: arquitectura
+author: Diego Rubio Abujas
 ---
 
 En esta primera entrada del blog tengo la intención de tratar de plasmar un poco todo lo aprendido recientemente sobre la Arquitectura Hexagonal aplicada a proyectos de microservicios con **Spring Boot**.
@@ -21,7 +22,7 @@ Así que, cómo no quiero que se me olvide nada, dejo constancia en este escrito
 
 La arquitectura hexagonal (o patrón de *puertos & adaptadores*) no es algo nuevo, ni novedoso, ni revolucionario. Lleva años ahí, y a mi entender, no es algo que vaya revolucionar el mundo del desarrollo, pero si trae algunas cosas interesantes.
 
-Parte de ideas vistas en la **Clean Architectura** y complementadas por *Alister Cockburn*, en su web encontrareis una amplia información.
+Parte de ideas vistas en la **Clean Architectura** y complementadas por *Alister Cockburn*, en su [web](https://alistair.cockburn.us/hexagonal-architecture/) encontrareis una amplia información.
 
 La idea fundamental de esta arquitectura es aislar la lógica de negocio , o como lo denominan el *dominio* (¡Ojo! No confundir con Dominio web, o de base de datos) o lógica de negocia del resto de la infraestructura de forma que cualquier cambio en la forma en la que se llama al servicio, repositorios de datos, cambios en el framework, etc no afecto a la lógica de negocio. Y tengas por un lado limpiamente la lógica de negocio, el core, el núcleo de nuestra aplicación separado de todo lo demás.
 
@@ -114,4 +115,4 @@ De esta estructura de carpetas destacar la enorme existencia de mappers, tres pa
 
 # Interesante crítica y reflexión
 
-Hay un artículo muy interesante de Javier Vélez Reyes llamado Ni Nueva Ni Arquitectura Ni Hexagonal cuya lectura es muy recomendable
+Hay un [artículo](https://javiervelezreyes.com/ni-nueva-ni-arquitectura-ni-hexagonal/) muy interesante de Javier Vélez Reyes llamado Ni Nueva Ni Arquitectura Ni Hexagonal cuya lectura es muy recomendable
