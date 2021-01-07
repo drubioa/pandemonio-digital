@@ -1,0 +1,8 @@
+--- 
+--- 
+@import "{{ site.theme }}";
+
+/* Change green colour to orange */
+@import "default_colors";
+$conifer: orange;
+
