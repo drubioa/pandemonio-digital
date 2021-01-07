@@ -27,7 +27,7 @@ url: "https://drubioa.github.io" # the base hostname & protocol for your site, e
 twitter_username: diegorubioa
 github_username:  drubioa
 lang: es-ES
-favicon: assets/images/favicon.ico
+search: true
 
 # Build settings
 remote_theme: "mmistakes/jekyll-theme-basically-basic"
@@ -39,6 +39,10 @@ disqus:
 
 plugins:
   - jekyll-feed
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
