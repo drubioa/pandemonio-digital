@@ -42,7 +42,7 @@ Para comunicar esta capa de infraestructura con el dominio se utilizarán interf
 
 ## Baeldung
 
-La primera estructura de carpetas que vamos a exponer es una que he visto en una demostración de Baelding y que se puede ver en el siguiente enlace.
+La primera estructura de carpetas que vamos a exponer es una que he visto en una demostración de Baelding y que se puede ver en el siguiente [enlace](https://github.com/eugenp/tutorials/tree/master/ddd/src/main/java/com/baeldung/dddhexagonalspring).
 
 ```
 application/
@@ -65,7 +65,7 @@ De la estructura de baeldung decir que me gusta mucho el uso que le da al paquet
 
 ## Curso de Openwebinars
 
-Esta estructura de carpetas la vi en un curso que recibí de Openwebinars y se puede encontrar en el siguiente enlace .
+Esta estructura de carpetas la vi en un curso que recibí de [Openwebinars](https://openwebinars.net/cursos/arquitectura-hexagonal/) y se puede encontrar en el siguiente [enlace](https://github.com/OpenWebinarsNet/curso-arquitectura-hexagonal).
 
 ```
 adapters/
