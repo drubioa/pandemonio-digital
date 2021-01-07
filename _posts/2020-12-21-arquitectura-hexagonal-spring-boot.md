@@ -6,6 +6,8 @@ categories: arquitectura
 author: Diego Rubio Abujas
 ---
 
+![Diagrama de arquitectura hexagonal]({{ site.url }}{{ site.baseurl }}/assets/images/arquitectura-hexagonal-spring-boot/hexagonal-architecture.png){:class="page.image"}
+
 En esta primera entrada del blog tengo la intención de tratar de plasmar un poco todo lo aprendido recientemente sobre la Arquitectura Hexagonal aplicada a proyectos de microservicios con **Spring Boot**.
 
 Partimos de la base de que el lector de este artículo ya posee conocimientos en arquitectura MVC (Modelo, vista y controlador) y está algo familiarizado con el framework SprinBoot (Aunque esta arquitectura sería perfectamente aplicable a otros frameworks, lenguajes de programación).
@@ -27,8 +29,6 @@ Parte de ideas vistas en la **Clean Architectura** y complementadas por *Alister
 La idea fundamental de esta arquitectura es aislar la lógica de negocio , o como lo denominan el *dominio* (¡Ojo! No confundir con Dominio web, o de base de datos) o lógica de negocia del resto de la infraestructura de forma que cualquier cambio en la forma en la que se llama al servicio, repositorios de datos, cambios en el framework, etc no afecto a la lógica de negocio. Y tengas por un lado limpiamente la lógica de negocio, el core, el núcleo de nuestra aplicación separado de todo lo demás.
 
 Por otro lado se persigue conseguir una alta cambiabilidad, es decir, que si el día de mañana queremos realizar cambios en la forma en la que se nos llama, llamadas que hacemos, framework que utilizamos, repositorios de datos, etc... esto no afecte al dominio.
-
-![Diagrama de arquitectura hexagonal]({{ site.url }}{{ site.baseurl }}/assets/images/arquitectura-hexagonal-spring-boot/hexagonal-architecture.png){:class="page.image"}
 
 [/]: <> (Comentario de)
 
