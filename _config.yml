@@ -30,7 +30,8 @@ twitter_username: jekyllrb
 github_username:  drubioa
 
 # Build settings
-theme: minima
+theme: jekyll-theme-midnight
+
 show_downloads: false
 
 plugins:
