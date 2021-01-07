@@ -21,12 +21,10 @@
 title: Pandemonio Digital
 email: dbiosag@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Blog sobre ingeniería de software, programación, bases de datos y otras novedades tecnológicas.
 baseurl: "/pandemonio-digital" # the subpath of your site, e.g. /blog
 url: "https://drubioa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: diegorubioa
 github_username:  drubioa
 
 # Build settings

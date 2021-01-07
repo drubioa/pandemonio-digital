@@ -27,7 +27,7 @@ La idea fundamental de esta arquitectura es aislar la lógica de negocio , o com
 
 Por otro lado se persigue conseguir una alta cambiabilidad, es decir, que si el día de mañana queremos realizar cambios en la forma en la que se nos llama, llamadas que hacemos, framework que utilizamos, repositorios de datos, etc... esto no afecte al dominio.
 
-![Diagrama de arquitectura hexagonal](/assets/images/arquitectura-hexagonal-spring-boot/hexagonal-architecture.png){:class="page.image"}
+![Diagrama de arquitectura hexagonal]({{ site.url }}/assets/images/arquitectura-hexagonal-spring-boot/hexagonal-architecture.png){:class="page.image"}
 
 [/]: <> (Comentario de)
 
