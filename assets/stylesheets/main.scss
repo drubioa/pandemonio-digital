@@ -1,0 +1,10 @@
+---
+---
+
+@charset "utf-8";
+// Theme skin
+$accent-color: orangered;
+@import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
+$accent-color: orangered;
+@import "basically-basic";
+
