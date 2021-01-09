@@ -3,8 +3,6 @@
 
 Language: English
 
-![logo](assets/images/panda-icon.png)
-
 # Starting 🚀
 The main propuse of this project is make my personal blog for **GitHub Pages** with **Jekyll**.
 
