@@ -37,6 +37,10 @@ show_downloads: false
 disqus:
   shortname: https-drubioa-github-io-pandemonio-digital
 
+# Google Analytics 
+google_analytics: G-FKG8X4XPNE
+
+
 plugins:
   - jekyll-feed
   - jekyll-feed
