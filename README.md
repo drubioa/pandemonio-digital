@@ -1,7 +1,7 @@
 # Blog Pandemonio-Digital
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Language: English
+Language: English | [Español](docs/README-es.md)
 
 ![screenshot-demo](docs/demo-blog.gif)
 
