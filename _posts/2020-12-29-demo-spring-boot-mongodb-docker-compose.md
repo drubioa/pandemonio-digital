@@ -2,7 +2,7 @@
 layout: post
 title:  "Demo spring boot + mongodb + docker-compose"
 date:   2020-12-29 20:00:00 +0100
-categories: demo
+categories: demos
 author: Diego Rubio Abujas
 ---
 
