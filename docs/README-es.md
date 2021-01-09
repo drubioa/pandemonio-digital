@@ -3,7 +3,7 @@
 
 Language: [English](../README.md) | Español
 
-![screenshot-demo](docs/demo-blog.gif)
+![screenshot-demo](demo-blog.gif)
 
 # Comenzando 🚀
 El principal propósito de este proyecto es realizar mi blog personal utilizando  **GitHub Pages** con **Jekyll**.
