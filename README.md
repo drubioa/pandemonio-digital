@@ -3,6 +3,8 @@
 
 Language: English
 
+![screenshot-demo](docs/demo-blog.gif)
+
 # Starting 🚀
 The main propuse of this project is make my personal blog for **GitHub Pages** with **Jekyll**.
 
