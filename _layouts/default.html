@@ -8,6 +8,18 @@
 <html lang="{{ page.lang | default: site.lang | default: 'es-ES' }}" class="no-js">
 {% include head.html %}
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKG8X4XPNE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FKG8X4XPNE');
+</script>
+
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/pandi-favicon.ico">
 
 <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
