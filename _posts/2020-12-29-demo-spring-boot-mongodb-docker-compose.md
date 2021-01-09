@@ -156,16 +156,16 @@ public class SimpleMongoConfig {
 
  ```
 
- # README
- Otra cosilla que he aplicado en esta prueba de concepto es intentar mejorar un poco la calidad de los ficheros README.md que aparecen en el proyecto. Basandome en otros ejemplos que he visto he incluido soporte para idiomas (incluyendo dos ficheros y enlazandolos arriba del todo) y he visto que se pueden incluir iconos de forma nativa en el README.md (como se puede ver en los titulos).
+# Readme
+ Otra cosilla que he aplicado en esta prueba de concepto es intentar mejorar un poco la calidad de los ficheros README.md que aparecen en el proyecto. Basándome en otros ejemplos que he visto he incluido soporte para idiomas (incluyendo dos ficheros y enlazándolos arriba del todo) y he visto que se pueden incluir iconos de forma nativa en el README.md (como se puede ver en los títulos).
 
- # Probando el servicio
+# Probando el servicio
 La prueba es la siguiente:
 
 1. Se realiza una petición POST para insertar un nuevo registro. Se comprueba que se devuelve 200.
 2. Se realiza una petición GET para comprobar que el registro se ha guardado correctamente en la base de datos.
 
-En el fichero README se encuentra mas información sobre como lanzar, probar este proyecto. Así como una coleccion de pruebas de Postman que es posible importar. 
+En el fichero README se encuentra mas información sobre como lanzar, probar este proyecto. Así como una colección de pruebas de Postman que es posible importar. 
 
 
 
