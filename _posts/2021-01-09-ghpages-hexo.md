@@ -10,7 +10,7 @@ author: Diego Rubio Abujas
 
 [Enlace web GitHub Pages](https://drubioa.github.io/demo-ghpages-hexo/)
 
-[Repositorio GitHub](https://drubioa.github.io/demo-ghpages-hexo/)
+[Repositorio GitHub](https://github.com/drubioa/demo-ghpages-hexo)
 
 # Introducción
 Ya hemos realizado una prueba de concepto de la creación de un blog en GitHub Pages mediante Jekyll. En esta entrada vamos a mostrar cómo se genera un blog utilizando web estáticas y posteando con formato `markdown`, pero en lugar de utilizar el framework Jekyll vamos utilizar el framework `Hexo`.
