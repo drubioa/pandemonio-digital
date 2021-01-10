@@ -58,7 +58,7 @@ hexo generate
 
 Tras lanzarlo podemos observar que se crea una nueva carpeta con el `index.html` y todo el contenido del blog.
 
-### 2,3 Levantar nuestro blog en local
+### 2.3 Levantar nuestro blog en local
 
 Al igual que con Jekyll, disponemos del comando `server` que levanta `public` en nuestro máquina local en el puerto que hayamos indicado (Por defecto `https://localhost:4000`).
 
@@ -110,7 +110,7 @@ Es muy importante que root vaya entre '/'.
 
 ### 4.3 Desplegando nuestro blog en GitHub Pages
 
-Para desplegar nuestro blog en primer lugar crearemos una nueva llamada `gh-pages` en el repositorio de GitHub. Seguidamente instalaremos en nuestro proyecto [hexo-deployer-git](https://www.npmjs.com/package/hexo-deployer-git) con el siguiente comando:
+Para desplegar nuestro blog instalaremos en nuestro proyecto [hexo-deployer-git](https://www.npmjs.com/package/hexo-deployer-git) con el siguiente comando:
 
 ```bash
 $npm install hexo-deployer-git --save
