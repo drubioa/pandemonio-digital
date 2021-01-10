@@ -40,13 +40,16 @@ disqus:
 # Google Analytics 
 google_analytics: G-FKG8X4XPNE
 
-
 plugins:
   - jekyll-feed
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: /page:num/
   
 
 # Exclude from processing.
