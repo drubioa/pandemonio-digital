@@ -6,6 +6,7 @@ google_fonts:
 
 navigation_pages:
   - categories.md
+  # - tags.md
   - about.md
 
 t:
