@@ -4,6 +4,7 @@ title:  "Arquitectura hexagonal en proyectos con Spring Boot"
 date:   2020-12-21 22:00:00 +0100
 categories: arquitectura
 author: Diego Rubio Abujas
+tads: springboot arquitectura
 ---
 
 ![Diagrama de arquitectura hexagonal]({{ site.url }}{{ site.baseurl }}/assets/images/arquitectura-hexagonal-spring-boot/hexagonal-architecture.png){:class="page.image"}

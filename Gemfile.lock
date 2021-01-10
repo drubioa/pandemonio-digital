@@ -31,8 +31,6 @@ GEM
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
     faraday-net_http (1.0.0)
-    fastimage (1.6.8)
-      addressable (~> 2.3, >= 2.3.5)
     ffi (1.14.2-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
@@ -132,10 +130,6 @@ GEM
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
-    jekyll-picture-tag (0.3.0)
-      fastimage (~> 1.6.4)
-      jekyll (< 4)
-      mini_magick (~> 3.8.0)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -217,8 +211,6 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
-    mini_magick (3.8.1)
-      subexec (~> 0.2.1)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
@@ -254,7 +246,6 @@ GEM
       faraday (> 0.8, < 2.0)
     simpleidn (0.1.1)
       unf (~> 0.1.4)
-    subexec (0.2.3)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
@@ -277,7 +268,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
-  jekyll-picture-tag (~> 0.3.0)
+  jekyll-paginate
   jekyll-theme-basically-basic
   tzinfo (~> 1.2)
   tzinfo-data
