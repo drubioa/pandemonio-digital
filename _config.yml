@@ -23,9 +23,9 @@ email: dbiosag@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog sobre ingeniería de software, programación, bases de datos y otras novedades tecnológicas.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.pandemoniodigital.es" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.pandemoniodigital.es" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: diegorubioa
-github_username:  drubioa
+github_usernae:  drubioa
 lang: es-ES
 search: true
 
