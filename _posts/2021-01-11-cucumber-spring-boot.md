@@ -8,6 +8,8 @@ author: Diego Rubio Abujas
 
 ![Logo cucumber]({{ site.url }}{{ site.baseurl }}/assets/images/cucumber-spring-boot/cucumber.png)
 
+[Prueba de Concepto](https://github.com/drubioa/demo-cucumber-spring-boot)
+
 En este post vamos a hablar un poco de la pelea de esta semana: montar un proyecto con spring-boot y realizar pruebas siguiendo una estrategIa BDD (Behavior Driven Development). También especificaremos un poco qué es TDD, qué es Cucumber, Gherkins y cómo se implementan test de este tipo en un proyecto de Spring Boot.
 
 # Un poco de teoría
@@ -70,3 +72,12 @@ Podemos encontrar mucha información sobre este software en su [web](https://cuc
 
 # La Prueba de concepto
 Para este caso la prueba que vamos a realizas es la siguiente: vamos a desarrollar con spring-boot un servicio REST que reciba dos valores y devuelva la suma de ambos, algo simplón pero para el caso nos sirve. Lo que predentemos con esta prueba mas que desarrollar un servicio es incluir pruebas de comportamiento con cucumber y gherkins.
+
+## Creación de la aplicación base
+Vamos a [Sprint Initializr](https://start.spring.io/) y generamos un proyecto Spring Boot tal y como mostramos en la ventana de más abajo:
+
+![Captura]({{ site.url }}{{ site.baseurl }}/assets/images/cucumber-spring-boot/spring-initializr.png)
+
+## Implementando nuestro proyecto
+No voy a indicar todos los pasos que he seguido para implementar la prueba de concepto, para saber que se ha hecho podéis echar un vistado al repositorio de GitHub (más arriba está el enlace), lo que sí quería indicasr es un plugin muy útil para Intellij que nos ayudará a trabajar de una manera más cómoda con el fichero de *features* del jherkins y que tieneis disponible en el siguiente [enlace](https://plugins.jetbrains.com/plugin/9164-gherkin) o bien entrando desde el marketplace de plugins de Intellij.
+
