@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Mi top 5 de plugins de Intellij"
-date:   2021-01-08 14:00:00 +0100
+title: "Mi top 5 de plugins de Intellij"
+date: 2021-01-08 14:00:00 +0100
 categories: ides
 author: Diego Rubio Abujas
 ---

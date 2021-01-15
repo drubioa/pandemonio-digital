@@ -49,7 +49,6 @@ Debemos modificar nuestro fichero `_config.yml` para modificar el baseurl y url.
 baseurl: "" 
 url: "https://pandemoniodigital.es" 
 ```
-
 Finalizada la configuración y una vez se habilita la opcion `https` en la configuración GitHub ya podremos acceder desde el dominio a nuestra web creada con Jekyll/Hexo.
    
 
