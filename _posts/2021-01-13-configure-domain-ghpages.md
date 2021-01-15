@@ -37,19 +37,18 @@ El primer paso es entrar desde la web de GitHub al apartado de configuración. A
 
 ![Logo GhPages]({{ site.url }}{{ site.baseurl }}/assets/images/ghpages-config-domain/screenshot.png){:class="page.image"}
 
-1. En primar lugar en *Custom domain* introducir nuestro dominio, sin http/https, solo el nombre `.com,.es,.net...`. 
-Al habilitar esta opción se nos creará de manera automática un fichero `CNAME` con la dirección de nuestro dominio en el directorio *root* del repositorio.
+1. En primar lugar en Custom domain introducir nuestro dominio, sin http/https, solo el nombre `.com,.es,.net...`. 
+Al habilitar esta opción se nos crearé de manera automática un fichero `CNAME` con la dirección de nuestro dominio en el directorio raíz del repositorio.
 
-2. Habilitar HTTPS, esta operación puede tardar bastante en aparecer (Hasta 24 hora según he leído en una advertencia, aunque creo que a mi no tardó mas de 20 minutos).
+2. Habilitar HTTPS, esta operación puede tardar bastante en aparecer (Hasta 24 hora de hecho).
 
 # Paso 3: Configurar nuevo dominio en Jekyll
-Debemos modificar nuestro fichero `_config.yml` para modificar el **baseurl** y **url**. Quedaría de la siguiente manera para, por ejemplo este blog.
+Debemos modificar nuestro fichero `_config.yml` para modificar el baseurl y url. Quedaría de la siguiente manera para, por ejemplo este blog.
 
 ```yaml
 baseurl: "" 
 url: "https://pandemoniodigital.es" 
 ```
-
-Finalizada la configuración y una vez se habilita la opción `https` en la configuración GitHub ya podremos acceder desde el dominio a nuestra web creada con Jekyll/Hexo.
+Finalizada la configuración y una vez se habilita la opcion `https` en la configuración GitHub ya podremos acceder desde el dominio a nuestra web creada con Jekyll/Hexo.
    
 
