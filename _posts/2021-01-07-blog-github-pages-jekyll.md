@@ -2,7 +2,7 @@
 layout: post
 title: "GitHub Pages + Jekyll"
 date:   2021-01-07 19:44:37 +0100
-categories: demos
+categories: demo
 author: Diego Rubio Abujas
 ---
 

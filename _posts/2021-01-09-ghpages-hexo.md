@@ -2,7 +2,7 @@
 layout: post
 title:  "GitHub Pages + Hexo"
 date:   2021-01-10 20:20:00 +0100
-categories: demos
+categories: demo
 author: Diego Rubio Abujas
 ---
 
