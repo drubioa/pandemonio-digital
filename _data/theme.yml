@@ -5,7 +5,6 @@ google_fonts:
     weights: "300,300i,500,500i"
 
 navigation_pages:
-  - categories.md
   - tags.md
   - about.md
 
