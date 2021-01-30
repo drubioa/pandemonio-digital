@@ -4,6 +4,7 @@ title:  "Docker Compose + Mongo Seed"
 date:   2021-01-29 01:03:00 +0100
 categories: demo
 author: Diego Rubio Abujas
+tags: mongo docker
 ---
 
 ![pair-programming]({{ site.url }}{{ site.baseurl }}/assets/images/docker-compose-mongo-seed/docker-mongo.png)

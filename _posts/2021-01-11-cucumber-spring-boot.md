@@ -4,6 +4,7 @@ title:  "Demo Cucumber + Spring Boot"
 date:   2021-01-11 03:11:00 +0100
 categories: testing
 author: Diego Rubio Abujas
+tags: springboot testing
 ---
 
 ![Logo cucumber]({{ site.url }}{{ site.baseurl }}/assets/images/cucumber-spring-boot/cucumber.png)
