@@ -4,6 +4,7 @@ title:  "Configurando domain en GitHub Pages"
 date:   2021-01-12 01:30:00 +0100
 categories: configuración
 author: Diego Rubio Abujas
+tags: ghpages
 ---
 
 ![Logo GhPages]({{ site.url }}{{ site.baseurl }}/assets/images/ghpages-config-domain/ghpages.jpeg){:class="page.image"}
