@@ -192,6 +192,3 @@ networks:
 
 ```
 
-## Contenedor docker con dos jars
-
-Una situación que me he encontrado a la hora de plantear el `Dockerfile` para el proyecto de **Spring Boot** era la de disponer de un solo contenedor con dos aplicaciones `jar` levantadas.
