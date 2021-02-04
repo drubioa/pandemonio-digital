@@ -209,10 +209,12 @@ Además, podemos comprobar mediante un cliente MONGO que ambas base de datos inc
 Bueno por lo que vemos funcionar funciona. pero es todo un poco enrevesado. He estado viendo que existen soluciones muy elegantes y que hacen el código más limpia. Una de ellas es utilizar [Axon](https://axoniq.io).
 
 ## Axon
-Qué es Axon, vien como vien nos indican en su web:
+¿Qué es Axon? como bien nos indican en su web:
+
 >Axon provides a unified, productive way of developing Java applications that can evolve without significant refactoring from a monolith to Event-Driven microservices. Axon includes both a programming model as well as specialized infrastructure to provide enterprise ready operational support for the programming model - especially for scaling and distributing mission critical business applications. The programming model is provided by the popular Axon Framework while Axon Server is the infrastructure part of Axon, all open sourced. If you want to scale-up, go for Axon Server Enterprise and reach out for details about pricing and possibilities.
 >
 > Web de Axon
+
 Tengo previsto hablar mucho mas de Axon, y realizar esta misma prueba de concepto con Axon una vez finalice un curso de Udemy que estoy realizando sobre ello; pero en resumidas cuenta los que nos proporciona Axon es un servidor con una base de datos encargado de orquestar y gestionar todo lo referente a eventsourcing y en los command y queries, unas anotaciones para gestionar tanto el envio de eventos como los listener que reaccionan a estos. Asi explicado de forma rápida y con mis palabras.
 
 ## Cosillas que me inquietan
