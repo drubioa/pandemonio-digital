@@ -9,7 +9,8 @@ tags: node demo kafka springboot
 
 ![diagrama]({{ site.url }}{{ site.baseurl }}/assets/images/cqrs-kafka-mongo-spring-boot/diagram.jpg)
 
-[Repositorio GitHub](https://github.com/drubioa/demo-ghpages-jekyll)
+[Repositorio GitHub](https://github.com/drubioa/demo-cqrs-kafka)
+
 # Introducción
 En esta ocasión vamos a plantear una cosilla con la que llevo peleándome desde antes de navidades. Bien, hace unos meses estuvimos viendo cómo realizar una prueba de concepto de **CQRS** con **Event Sourcing** (de la que hablaré mas abajo). La idea me pareció interesante, por otro lado estuve viendo dos cursos: uno de [Apache Kafka](https://openwebinars.net/cursos/apache-kafka/) y otro de [Mongo](https://openwebinars.net/cursos/apache-kafka/). Por lo tanto, también me parecia intersante hacer algun proyectillo de prueba en el que estuviesen presentes estas tecnologías.
 
@@ -61,14 +62,10 @@ Para esta prueba de concepto vamos a plantear una hipotética aplicación de mó
 ```
 
 ## docker-compose
-Es un ejemplo sencillo, por un lado tendremos un endpoint en el *command* para crear nuevos móviles. 
-En el query dispondremos de un servicio que dado el nombre de un teléfono devuelva el teléfono en cuestión.
+Para esta prueba de concepto, vamos a dejar desplegados en docker contenedores para todo aquello que necesitamos:
 
-Vamos a disponer de dos *endpoints*+* desarrollados con **Spring Boot** que dispondrán de servicios `REST` que realicen estas operaciones. Estos irán en un contenedor con dos puertos expuestos.
-
-También dispondremos de un contenedor con *Apache Kafka* con un topic para gestioanr los eventos. Y un *Apache Zookeper* en otro contenedor.
-
-Dos contenedores con **Mongo**, una para query y otro para command.
+- También dispondremos de un contenedor con *Apache Kafka* con un topic para gestioanr los eventos. Y un *Apache Zookeper* en otro contenedor.
+- Dos contenedores con **Mongo**, una para query y otro para command.
 
 A continuación moostramos como hemos planteado el **docker-compose**:
 
@@ -76,125 +73,37 @@ A continuación moostramos como hemos planteado el **docker-compose**:
 version: '3'
 
 services:
-
-  zoo1:
-    image: zookeeper:3.4.9
-    hostname: zoo1
-    ports:
-      - "2181:2181"
-    networks:
-      - kafka_net
-    environment:
-      ZOO_MY_ID: 1
-      ZOO_PORT: 2181
-      ZOO_SERVERS: server.1=zoo1:2888:3888
-    volumes:
-      - ./zk-single-kafka-single/zoo1/data:/data
-      - ./zk-single-kafka-single/zoo1/datalog:/datalog
-
-  kafka1:
-    image: confluentinc/cp-kafka:5.5.1
-    hostname: kafka1
-    ports:
-      - "29092:29092"
-    environment:
-      KAFKA_ADVERTISED_HOST_NAME: kafka
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
-      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9092,PLAINTEXT_HOST://localhost:29092
-      KAFKA_CREATE_TOPICS: create-phone:2:1
-      KAFKA_ZOOKEEPER_CONNECT: "zoo1:2181"
-      KAFKA_BROKER_ID: 1
-      KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-    volumes:
-      - ./zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
-    depends_on:
-      - zoo1
-    networks:
-      - kafka_net
-    healthcheck:
-      test: [ "CMD", "nc", "-vz", "localhost", "9092" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-  spring-boot-cqrs:
+  app:
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
-    image: demo-cqrs
-    hostname: demo-cqrs
+    image: app
+    hostname: app
     ports:
       - "8081:8081"
-      - "8082:8082"
     depends_on:
-      kafka1:
-        condition: service_healthy
-      mongo-command:
-        condition: service_healthy
-      mongo-query:
-        condition: service_healthy
+      - mongodb
     networks:
-      - kafka_net
-      - mongo_net
+      - my-network
 
-  mongo-command:
+  mongodb:
     image: mongo:latest
-    container_name: mongo-command
-    hostname: mongo-command
-    ports:
-      - 30000:27017
-    volumes:
-      - ./data1/db:/data/db
-      - ./data1/configdb:/data/configdb
+    container_name: "mongodb"
+    hostname: mongodb-host
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
       - MONGO_INITDB_ROOT_PASSWORD=secret
-      - MONGO_DB_NAME=examples
-    command: [ --auth , --bind_ip_all, --replSet, rs0 ]
-    restart: always
-    networks:
-      - mongo_net
-    healthcheck:
-      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u root -p secret --quiet) -eq 1
-      interval: 120s
-      start_period: 60s
-
-  mongo-query:
-    image: mongo:latest
-    container_name: mongo-query
-    hostname: mongo-query
+      - MONGO_INITDB_DATABASE=example
     ports:
-      - 30001:27017
-    volumes:
-      - ./data2/db:/data/db
-      - ./data2/configdb:/data/configdb
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=secret
-      - MONGO_DB_NAME=examples
-    command: [ --auth , --bind_ip_all, --replSet, rs0 ]
-    restart: always
+      - "27017:27017"
     networks:
-      - mongo_net
-    healthcheck:
-      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u root -p secret --quiet) -eq 1
-      interval: 120s
-      start_period: 60s
-
-volumes:
-  data01:
-    driver: local
-  data2:
-    driver: local
+      - my-network
+    volumes:
+      - ./data/init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
 networks:
-  kafka_net:
+  my-network:
     driver: bridge
-  mongo_net:
-    driver: bridge
-
 ```
 
 ## Spring Boot
@@ -269,6 +178,32 @@ public class KafkaCreatePhoneEventListener {
 ```
 
 Como podemos observar este `KafkaListener` esta a la espera de que llegue un mensaje por parte del broker. Como indiqué más arriba en caso de existitr múltiples servicios levantados, solo le llegará a uno de ellos por defecto lo cual nos viene genial. Una vez recibido el objeto que llegará en forma de `JSON` se transforma a un objeto de tipo `Phone` y seguidamente se inserta en la base de datos.
+
+# La prueba
+Bien una vez estan levantados todos los contenedores de Docker (los dos mongos, el broker de apache kafka y el zookeeper), y los dos microservicios el command y query. Procedemos a probar el flujo que hemos dibujas o en el diagrama superior:
+
+1. En primer lugar vamos a realizar POST para insertar un nuevo terminal.
+
+```bash
+curl --location --request POST 'localhost:8081/phone' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "iphone8",
+    "model": "11",
+    "color": "red",
+    "price": 800.99
+}'
+````
+
+Si observamos el log tanto de un microservicio query como de command, podremos observar como se va realizando el flujo.
+
+A continuación vamo a comprobar que el telefono se ha dado de alta en la base de datos de query:
+
+```bash
+curl --location --request GET 'localhost:8082/phone/iphone12'
+```
+
+Además, podemos comprobar mediante un cliente MONGO que ambas base de datos incluyen este nuevo registro.
 
 # Conclusión y cosas a tener en cuenta
 Bueno por lo que vemos funcionar funciona. pero es todo un poco enrevesado. He estado viendo que existen soluciones muy elegantes y que hacen el código más limpia. Una de ellas es utilizar [Axon](https://axoniq.io).
