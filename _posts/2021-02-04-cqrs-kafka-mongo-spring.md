@@ -4,7 +4,7 @@ title:  "Demo CQRS con SpringBoot + Kafka + Mongo"
 date:   2021-02-04 17:54:00 +0100
 categories: demo
 author: Diego Rubio Abujas
-tags: node demo kafka springboot
+tags: demo kafka springboot
 ---
 
 ![diagrama]({{ site.url }}{{ site.baseurl }}/assets/images/cqrs-kafka-mongo-spring-boot/diagram.jpg)
