@@ -11,7 +11,7 @@ author: Diego Rubio Abujas
 
 # Introduccióm
 
-En este artículo quiero hablar del modelo ACID y el teorema CAP. La motivación de este artículo es dar un repaso a ambos conceptos, y repasar un poco su relación con las bases de datos de tipo noSql. ¡Vamos allá!
+En este artículo quiero hablar del modelo ACID y el teorema CAP. La motivación de este artículo es dar un repaso a ambos conceptos, y mostrar su relación con las bases de datos de tipo noSql. ¡Vamos allá!
 
 # ACID
 
@@ -24,7 +24,7 @@ Y bueno definamos un poco también que una **transacción** es un conjunto de...
 
 > Una **transacción** es una interacción con una estructura de datos compleja, compuesta por varios procesos que se han de aplicar uno después del otro. La transacción debe realizarse de una sola vez y sin que la estructura a medio manipular pueda ser alcanzada por el resto del sistema hasta que se hayan finalizado todos sus procesos.
 
-Las propiedades ACID fueron definidas en California, en los años 70.
+Las propiedades ACID fueron definidas en California en los años 70.
 
 ## Atomicity ó Atomicidad
 
@@ -32,7 +32,7 @@ Cuando una operación o transacción es atómica, tenemos la garantía de que se
 
 ## Consistency ó Consistencia
 
-Esta propiedad hace referencia a la Integridad de nuestra base de datos, una vez se realice la transacción la base de datos quedará en un estado consistente o integro, no habrá reglas rotas como relaciones foranes que no se cumplan, claves primarias repetidas, nulos donde no debería haber nulos, etc. Es decir, la transacción cumplirá las reglas establecida por nuestra base de datos.
+Esta propiedad hace referencia a la Integridad de nuestra base de datos, una vez se realice la transacción la base de datos quedará en un estado consistente o integro, no habrá reglas rotas como relaciones foránes que no se cumplan, claves primarias repetidas, nulos donde no debería haber nulos, etc. Es decir, la transacción cumplirá las reglas establecida por nuestra base de datos.
 
 ## Isolation ó Aislamiento
 
@@ -44,13 +44,13 @@ Una vez haya terminado la transacción, los cambios perdurarán en el tiempo.
 
 # No Sql
 
-Las bases de datos No Sql, acabara un amplio número de sistemas gestores de bases de datos pensadas para trabajar de manera distribuida; y entre los que podemos enumerar Mongo, Cassandra, Elastic Search... etc. 
+Las bases de datos No Sqs abarcan un amplio número de sistemas gestores de bases de datos pensados para trabajar de manera distribuida; y entre los que podemos enumerar Mongo, Cassandra, Elastic Search... etc. 
 
-Estas bases de datos, por lo que poco que sé y por lo que he visto tienen varias características, de entre las cuáles quiero enumerar las siguientes.
+Estas bases de datos, por lo que poco que sé y por lo que he visto tienen varias características de entre las cuáles quiero enumerar las siguientes.
 
-1. Escalan muy bien de manera horizonal, no tengo que meter mas hardware a mi base de datos única, sino que ampliar el cluster con nuevas máquinas, contenedores, etc.
-2. Debido a este ecosistema de muchas máquinas, se crea un sistema replicar, particiones, todo ello hace que los JOIN y las relaciones entre colecciones, tablas se gestionen de una forma bastante poco eficiente, y en algunos casos no se pueda gestionar.
-3. Pueden soportar mayor carga de peticiones, y escalar mucho mejor que las bases de datos relacionales.
+1. Escalan muy bien de manera horizontal, no tengo que meter mas hardware a mi base de datos, sino que ampliar el cluster con nuevas máquinas, contenedores, etc.
+2. Debido a este ecosistema de muchas máquinas, se crea un sistema de replicas y particiones, todo ello hace que los JOIN y las relaciones entre colecciones, tablas se gestionen de una forma bastante poco eficiente, enrevesada y en algunos casos no se pueda gestionar.
+3. Pueden soportar mayor carga de peticiones y escalar mucho mejor que las bases de datos relacionales.
 4. **NO garantizan completamente ACID.**
 
 # Teorema CAP
