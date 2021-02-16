@@ -4,7 +4,7 @@ title:  "Demo spring boot + mongodb + docker-compose"
 date:   2020-12-29 20:00:00 +0100
 categories: demo
 author: Diego Rubio Abujas
-tags: springboot demo mongo docker
+tags: springboot demo databases docker
 ---
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/demo-spring-boot-mongodb-docker-compose/image.png){:class="page.image"}
