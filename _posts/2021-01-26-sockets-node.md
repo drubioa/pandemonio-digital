@@ -4,7 +4,7 @@ title:  "Demo Socket.io + Node"
 date:   2021-01-26 02:00:00 +0100
 categories: demo
 author: Diego Rubio Abujas
-tags: node demo
+tags: node poc
 ---
 
 ![cabecera]({{ site.url }}{{ site.baseurl }}/assets/images/demo-socket-node/node+socket-io.png){:class="page.image"}

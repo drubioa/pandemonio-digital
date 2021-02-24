@@ -3,6 +3,7 @@ layout: post
 title:  "Monolitos modulares"
 date:   2021-02-05 03:00:00 +0100
 categories: arquitectura
+tags: arquitectura
 author: Diego Rubio Abujas
 ---
 

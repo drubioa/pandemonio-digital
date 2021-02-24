@@ -4,7 +4,7 @@ title:  "GitHub Pages + Hexo"
 date:   2021-01-10 20:20:00 +0100
 categories: demo
 author: Diego Rubio Abujas
-tags: ghpages
+tags: ghpages poc
 ---
 
 ![Diagrama de arquitectura hexagonal]({{ site.url }}{{ site.baseurl }}/assets/images/demo-ghpages-hexo/hexo-github.png){:class="page.image"}

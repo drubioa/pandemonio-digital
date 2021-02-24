@@ -4,6 +4,7 @@ title:  "Pair Programming + Code with me"
 date:   2021-01-17 03:00:00 +0100
 categories: documentación
 author: Diego Rubio Abujas
+tags: pildoras
 ---
 
 ![pair-programming]({{ site.url }}{{ site.baseurl }}/assets/images/pair-programming/ikea.png)
