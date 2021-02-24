@@ -4,7 +4,7 @@ title: "GitHub Pages + Jekyll"
 date:   2021-01-07 19:44:37 +0100
 categories: demo
 author: Diego Rubio Abujas
-tags: ghpages demo
+tags: ghpages poc
 ---
 
 ![Logo GitHub Pages]({{ site.url }}{{ site.baseurl }}/assets/images/github-pages-jekyll/jekyll_ghpages.jpg){:class="page.image"}
