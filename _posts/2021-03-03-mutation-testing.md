@@ -82,7 +82,7 @@ Como resultado de las pruebas de mutación con Pitest en el reporte podemos tene
 
 1. Mutanta eliminado.
 2. No ha sido cubierto por los test y por tanto el mutante ha sobrevivido. 
-3. La mutación no es válida y no ha sido podido ejecutar por la JVM.
+3. La mutación no es válida y no ha podido ser ejecutada por la JVM.
 4. Un error en la memoria.
 5. Un error de ejecución.
 
