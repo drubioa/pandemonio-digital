@@ -23,7 +23,7 @@ Del resultado de las pruebas de mutación obtenemos una puntuación que cuanto m
 
 # Tipos de mutaciones
 
-Básicamente podemos enumerar tres tipos de mutaciones:
+Básicamente podemos enumerar los siguientes tipos de mutaciones:
 
 1. Mutación de estado: eliminación o duplicación de determinadas líneas de código
 2. Mutación de valor: se cambia un valor
@@ -34,7 +34,7 @@ Básicamente podemos enumerar tres tipos de mutaciones:
 
 Algunas de las ventajas que podemos enumerar de las pruebas de mutación son las siguientes:
 
-1. Nos permite evaluar la cobertura "real" de nuestro programa.
+1. Nos permite evaluar la cobertura "real" de nuestro código.
 2. Nos permite identificar nuevas pruebas que realizar.
 3. Mejora la detección de errores en el desarrollo de softwre.
 4. Permite detectar ambigüedades y fallos en el código.
@@ -43,7 +43,7 @@ Algunas de las ventajas que podemos enumerar de las pruebas de mutación son las
 
 Podemos considerar también algunas desventajas:
 
-1. Son muy costosos de generar y ejecutar este tipo de pruebas, ya que implica repetir las pruebas un elevado numero de veces. 
+1. Son muy costosos de generar y ejecutar este tipo de pruebas, ya que implica repetir las pruebas un elevado número de veces. 
 2. Requiere tener acceso al código fuente, no se puede aplicar para pruebas de caja negra.
 3. Es necesario evaluar detalladamente los mutantes que hayan sobrevivido para ver cómo podemos mejorar nuestra batería de test.
 4. Requiere de una automatización para poder generar todos los mutantes.
@@ -56,7 +56,7 @@ Podemos considerar también algunas desventajas:
 
 Esta herramienta está pensada para pruebas en Java. Se puede configurar por plugin de maven, ant o por linea de comandos. Se puede integrar además con Gradle, Eclipse, Intellij y otros IDEs. 
 
-Esta herramienta nos permite configurar muchos operarodes de mutación para poder personalizar la generación de mutantes en este ejemplo que nos muestran en su web, si por ejemplo le indicaramos que sobre el código:
+Esta herramienta nos permite configurar muchos operadores de mutación para poder personalizar la generación de mutantes en este ejemplo que nos muestran en su web, si por ejemplo le indicaramos que sobre el código:
 
 ```java
 if ( i >= 0 ) {
