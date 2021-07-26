@@ -40,12 +40,12 @@ Como podemos observar en la imagen este servicio utiliza para proveer la sugeren
 
 # OpenAI Codex Model
 
- Se trata de una **modelo de aprendizaje automático** desarrollado por **OpenAI** que impulsa GitHub Copilot. Los creadores de este modelo se inspiraron en *GPT-3* para su creación.  Este modelo de aprendizaje automático se nutre de código publico existente en internet (Entiendo que en los repositorios públicos de GitHub entre otros).
+ Se trata de una **modelo de aprendizaje automático** desarrollado por **OpenAI** que impulsa GitHub Copilot. Los creadores de este modelo se inspiraron en *GPT-3* para su creación. Este modelo de aprendizaje automático se nutre de código publico existente en internet (Entiendo que en los repositorios públicos de GitHub entre otros).
 
 De GPT-3 sabemos que se trata de un modelo de lenguaje, lo cual indica que su objetivo es realizar una predicción de lo que vendrá a continuación basándose en datos previos. Podría decirse que es como un "autocompletar" pero referente a codificación. Las respuestas dadas por este modelo de lenguaje son "posibilidades" pueden ser más o menos acertadas.
 
 # Conclusiones
 
-Hay que aclarar que esta IA **no sustituye al desarrollador**, la codificación es solo una parte de las muchas tareas que debe realizar un desarrolladores. Los autores de OpenAI Codex Model señalan que su estado actual puede reducir costes de producción de software y aumentar la productividad pero no remplazará otras actividades de desarrollo.
+Hay que aclarar que esta IA **no sustituye al desarrollador**, la codificación es solo una parte de las muchas tareas que debe realizar un desarrollador. Los autores de OpenAI Codex Model señalan que su estado actual puede reducir costes de producción de software y aumentar la productividad pero no remplazará otras actividades de desarrollo.
 
-Esta IA se nutre de código open souce subido a la plataforma de GitHub por otros desarrolladores. Por lo que he podido leer este nuevo sistema será **de pago** y **no estará bajo licencia copyleft**. La IA de Github utiliza codigo bajo licencia GPL para entrenarse. Todo esto ha provocado cierto malestar y controversia entre la comunidad de desarrolladores, ya que su código se está utilizando para que otra empresa pueda enriquecerse con su trabajo.
+Esta IA se nutre de código open souce subido a la plataforma de GitHub por otros desarrolladores. Por lo que he podido leer este nuevo sistema será **de pago** y **no estará bajo licencia copyleft**. La IA de Github utiliza codigo bajo licencia GPL para entrenarse y realizar su funcion de autocompleatdo: todo esto ha provocado cierto malestar y controversia entre la comunidad de desarrolladores ya que su código se está utilizando para que otra empresa pueda lucrarse con su trabajo aportado y hecho público.
