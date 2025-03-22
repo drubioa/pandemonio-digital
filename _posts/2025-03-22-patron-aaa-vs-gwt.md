@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Patrón A-A-A Vs enfoque GWT"
-date:   2022-03-19 10:00:00 +0100
+date:   2025-03-21 22:00:00 +0100
 categories: arquitectura
 author: Diego Rubio Abujas
 tags: testing 
